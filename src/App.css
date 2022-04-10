@@ -1,38 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Purple+Purse&display=swap');
+
+body {
+  font-family: 'Purple Purse', cursive;
+  background-color: #f2fbfe;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer {
+  background-color: #fed64f;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.song-info {
+  border: 2px solid rgb(12, 94, 12);
+  border-radius: 5px;
+  padding-top: 1.5rem;
+  text-align: center;
+  color: #e2edff;
+  font-size: 2em;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  color: #e2edff;
+  font-size: 2em;
+  margin: 20px auto 20px auto;
+  padding: 20px;
+  width: 25%;
+}
+
+.song-info .album-image {
+  width: 50%;
+}
+
+.song-info .song-title {
+  font-weight: bold;
+  font-size: 0.6em;
+  color: #000;
+}
+
+.song-info .song-artist {
+  margin-top: 15px;
+  font-size: 0.5em;
+  color: #000;
+}
+
+button {
+  top: 25%;
+  background-color: #0a0a23;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: 35px;
+  min-width: 75px;
+  border: none;
+  border-radius: 5px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  padding: 8px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
