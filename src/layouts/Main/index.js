@@ -1,11 +1,11 @@
 import React from 'react';
-import SearchPage from '../../pages/SearchPage';
+import Header from '../Header';
 
 export default function Main() {
   return (
     <div className="main">
       <div className="column">
-        <SearchPage />
+        <Header />
       </div>
     </div>
   );
