@@ -1,11 +1,11 @@
 import React from 'react';
-import Track from '../components/Track';
+import SearchPage from '../../pages/SearchPage';
 
 export default function Main() {
   return (
     <div className="main">
       <div className="column">
-        <Track />
+        <SearchPage />
       </div>
     </div>
   );
