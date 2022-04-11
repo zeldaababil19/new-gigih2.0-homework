@@ -1,12 +1,16 @@
-import React from 'react';
-import Song from '../Song';
+const Track = (props) => {
+  const { imageUrl, albumName, songTitle, songArtist, onSelect, selectState } = props;
 
-export default function Track({ tracks }) {
-  const isEmpty = (tracks) => {
-    return tracks.lenght > 0;
-  };
+  return (
+    <div className="song-info">
+      <img src={imageUrl} alt={albumName} className="album-image" />
+      <h2 className="song-title">{songTitle}</h2>
+      <h3 className="song-artist">{songArtist}</h3>
+      <button className="btn btn-song" onClick={onSelect}>
+        {selectState ? 'Deselect' : 'Select'}
+      </button>
+    </div>
+  );
+};
 
-  const listTrack = tracks.map((data, id) => <Song key={id} src={data.album.images[0].url} alt={data.album.name} title={data.album.name} artist={data.album.artists[0].name} />);
-
-  return <div className="song-track">{listTrack}</div>;
-}
+export default Track;
