@@ -46,3 +46,26 @@ Now, we will create a table of tracks
   - Have a Search textbox button, when the button is clicked, it calls [Spotify Search API](https://developer.spotify.com/documentation/web-api/reference/#category-search). Later on, show the results on the Tracks Table created before.
 
 <br>
+
+## Homework - Module 3 - Session 2 - Hooks
+
+Add feature to select and deselect songs
+
+- Use the uri as the key indentifier for looping
+- Build this feature using Hooks
+- When a song is selected, the button label should be "Deselect". When the song isn't selected, the button label should be "Select"
+- When user searcher for another song, the selected songs should still be maintained in the list
+
+<br>
+
+## 5. Homework - Module 3 - Session 3 - Forms & Lifting State Up
+
+- Create a "create playlist" form with the following fields
+
+  - Title, minimum 10 characters
+  - Description
+  - A button to submit
+
+  - When the button is clicked, create a new playlist with those title and description, with songs that were selected previously
+  - Use Get Current User's Profile, Create a Playlist, and Add Items to a Playlist API to achieve this. Read more in the API Docs.
+  - Playlist should be private and collaborative should be false
