@@ -47,7 +47,7 @@ Now, we will create a table of tracks
 
 <br>
 
-## Homework - Module 3 - Session 2 - Hooks
+## 5. Homework - Module 3 - Session 2 - Hooks
 
 Add feature to select and deselect songs
 
@@ -58,7 +58,7 @@ Add feature to select and deselect songs
 
 <br>
 
-## 5. Homework - Module 3 - Session 3 - Forms & Lifting State Up
+## 6. Homework - Module 3 - Session 3 - Forms & Lifting State Up
 
 - Create a "create playlist" form with the following fields
 
@@ -69,3 +69,9 @@ Add feature to select and deselect songs
   - When the button is clicked, create a new playlist with those title and description, with songs that were selected previously
   - Use Get Current User's Profile, Create a Playlist, and Add Items to a Playlist API to achieve this. Read more in the API Docs.
   - Playlist should be private and collaborative should be false
+
+<br>
+
+## 7. Homework - Module 4 - Session 1 - Redux
+
+Move the access token state to redux store. The app should still behaves like it is before.
