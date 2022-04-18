@@ -75,3 +75,39 @@ Add feature to select and deselect songs
 ## 7. Homework - Module 4 - Session 1 - Redux
 
 Move the access token state to redux store. The app should still behaves like it is before.
+
+<br>
+
+## 8. Homework - Module 4 - Session 2 - React Router
+
+- Move the create playlist page URL to /create-playlist
+- The Create Playlist page only accessible when user already login. If user haven't logged in, redirect to root URL (/)
+- For the root URL (/)
+  - If user haven't logged in, show the Login link
+  - If user already logged in,redirect to Create Playlist page
+
+<br>
+
+## 9. Homework - Module 4 - Session 3 - Clean Code & ESLint
+
+Fix any impure functions / mutable codes, and also fix the eslint problems (if any).
+
+<br>
+
+## 10. Homework - Module 5 - Session 1 - CSS Grid & Flexbox
+
+## Modify the existing components, to use Flexbox and Grid.
+
+- At minimum there should be one components that use Flexbox, and a different component that use Grid.
+- You can freely choose which components that will be changed.
+  - Example:
+  - Grid used for Track Tables
+  - Flex used for song info (title, artist, etc)
+
+<br>
+
+## Homework - Module 5 - Session 2 - UI Component Library
+
+- Start using UI component library/just using CSS. You're free to choose any library/just using CSS.
+- You can freely choose which components that will be changed
+- Example: modify search input to material-ui

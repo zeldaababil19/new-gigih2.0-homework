@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { authToken } from "../../redux/actions";
-import { requestAuth } from "../../libs/auth";
+import { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { authToken } from '../../redux/action';
+import { requestAuth } from '../../lib/auth';
 
 const LandingPage = () => {
   const dispatch = useDispatch();
@@ -9,28 +9,28 @@ const LandingPage = () => {
 
   useEffect(() => {
     if (!isLoggedIn && window.location.hash) {
-      const hash = window.location.hash.split("#")[1];
+      const hash = window.location.hash.split('#')[1];
       const params = new URLSearchParams(hash);
 
-      const state = params.get("state");
-      const storedState = localStorage.getItem("spotify_auth_state");
+      const state = params.get('state');
+      const storedState = localStorage.getItem('spotify_auth_state');
 
-      const accessToken = params.get("access_token");
+      const accessToken = params.get('access_token');
       dispatch(authToken(accessToken));
 
-      const expiresInMilisecond = params.get("expires_in") * 1000;
+      const expiresInMilisecond = params.get('expires_in') * 1000;
       setTimeout(() => {
-        dispatch(authToken(""));
-        alert("Your access token is expired. Please log in again.");
+        dispatch(authToken(''));
+        alert('Your access token is expired. Please log in again.');
       }, expiresInMilisecond);
 
       if (accessToken && (state === null || state !== storedState)) {
-        alert("There was an error during the authentication");
+        alert('There was an error during the authentication');
       } else {
-        localStorage.removeItem("spotify_auth_state");
+        localStorage.removeItem('spotify_auth_state');
       }
     }
-  }, []);
+  }, [dispatch, isLoggedIn]);
 
   return (
     <main className="main">

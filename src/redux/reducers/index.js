@@ -1,5 +1,7 @@
+// initial state
 const initialState = { accessToken: '' };
 
+// reducer
 const appReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'auth':
@@ -9,4 +11,5 @@ const appReducer = (state = initialState, action) => {
   }
 };
 
+// export reducer, initial state
 export { appReducer, initialState };

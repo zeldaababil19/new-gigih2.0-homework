@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Form = (props) => {
   return (
     <section className="playlist-form">
@@ -19,7 +17,7 @@ const Form = (props) => {
             <textarea id="description" name="description" placeholder="Add an optional description" className="form__textarea" onChange={props.handlePlaylistChange} value={props.playlist.description}></textarea>
           </li>
         </ul>
-        <button type="submit" className="btn btn--save">
+        <button type="submit" className="btn btn--save" disabled={props.isSelectedEmpty}>
           Create playlist
         </button>
       </form>
